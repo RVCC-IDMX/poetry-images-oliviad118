@@ -1,48 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phenomenal Woman by Maya Angelou - Poetry Interpretation</title>
     <meta
       name="description"
-      content="A beautiful interpretation of Phenomenal Woman by Dr. Maya Angelou - showcasing poetry through modern web design"
+      content="Experience Maya Angelou's empowering poem 'Phenomenal Woman' with responsive design and meaningful imagery that celebrates strength and feminine grace."
     />
-    <title>Phenomenal Woman by Dr. Maya Angelou - Poetry Interpretation</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-
   <body>
-    <header>
-      <h1>Poetry Interpretation</h1>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="#poem">The Poem</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </nav>
+    <!-- Hero Section with Main Image -->
+    <header class="hero-section">
+      <!-- Responsive Hero Image -->
+      <img
+        src="https://res.cloudinary.com/do75xinze/image/upload/f_auto,q_auto,w_1200/phenomenal-woman-confidence_fbirei"
+        srcset="
+          https://res.cloudinary.com/do75xinze/image/upload/f_auto,q_auto,w_400/phenomenal-woman-confidence_fbirei   400w,
+          https://res.cloudinary.com/do75xinze/image/upload/f_auto,q_auto,w_800/phenomenal-woman-confidence_fbirei   800w,
+          https://res.cloudinary.com/do75xinze/image/upload/f_auto,q_auto,w_1200/phenomenal-woman-confidence_fbirei 1200w,
+          https://res.cloudinary.com/do75xinze/image/upload/f_auto,q_auto,w_1600/phenomenal-woman-confidence_fbirei 1600w
+        "
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1200px"
+        alt="Confident woman with natural hair in warm burgundy and gold tones, embodying the phenomenal strength and self-assurance celebrated in Maya Angelou's poem"
+        class="hero-image"
+        loading="eager"
+      />
+      <div class="hero-content">
+        <h1>Phenomenal Woman</h1>
+        <p class="author">by Maya Angelou</p>
+        <p class="hero-tagline">A celebration of inner strength, confidence, and the phenomenal nature of womanhood</p>
+      </div>
     </header>
 
     <main>
-      <article id="poem" role="main">
-        <header>
-          <h2>Phenomenal Woman</h2>
-          <p class="author">by <cite>Dr. Maya Angelou</cite></p>
-          <p class="poem-info">
-            <small>From your Poetry Planning assignment</small>
-          </p>
-        </header>
-
-        <div class="poem-content" role="article">
-          <!-- Stanza 1 - 13 lines -->
-          <div class="stanza">
+      <!-- Poetry Content Section -->
+      <article class="poem-container">
+        <!-- Stanza 1 -->
+        <section class="stanza" id="stanza-1">
+          <div class="stanza-number">I</div>
+          <div class="lines">
             <p class="line">Pretty women wonder where my secret lies.</p>
-            <p class="line">
-              I'm not cute or built to suit a fashion model's size
-            </p>
+            <p class="line">I'm not cute or built to suit a fashion model's size</p>
             <p class="line">But when I start to tell them,</p>
             <p class="line">They think I'm telling lies.</p>
             <p class="line">I say,</p>
-            <p class="line">It's in the reach of my arms</p>
+            <p class="line">It's in the reach of my arms,</p>
             <p class="line">The span of my hips,</p>
             <p class="line">The stride of my step,</p>
             <p class="line">The curl of my lips.</p>
@@ -51,9 +55,28 @@
             <p class="line">Phenomenal woman,</p>
             <p class="line">That's me.</p>
           </div>
+        </section>
 
-          <!-- Stanza 2 - 16 lines -->
-          <div class="stanza">
+        <!-- Visual Break with Sky Image -->
+        <section class="image-break">
+          <img
+            src="https://res.cloudinary.com/do75xinze/image/upload/f_auto,q_auto,w_800/golden-sky-transcendence_fa0dhw"
+            srcset="
+              https://res.cloudinary.com/do75xinze/image/upload/f_auto,q_auto,w_400/golden-sky-transcendence_fa0dhw  400w,
+              https://res.cloudinary.com/do75xinze/image/upload/f_auto,q_auto,w_800/golden-sky-transcendence_fa0dhw  800w,
+              https://res.cloudinary.com/do75xinze/image/upload/f_auto,q_auto,w_1200/golden-sky-transcendence_fa0dhw 1200w
+            "
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 800px"
+            alt="Expansive golden sky with dramatic clouds illuminated by warm sunlight, representing the transcendent and limitless nature of feminine empowerment"
+            class="section-image"
+            loading="lazy"
+          />
+        </section>
+
+        <!-- Stanza 2 -->
+        <section class="stanza" id="stanza-2">
+          <div class="stanza-number">II</div>
+          <div class="lines">
             <p class="line">I walk into a room</p>
             <p class="line">Just as cool as you please,</p>
             <p class="line">And to a man,</p>
@@ -71,15 +94,18 @@
             <p class="line">Phenomenal woman,</p>
             <p class="line">That's me.</p>
           </div>
+        </section>
 
-          <!-- Stanza 3 - 16 lines -->
-          <div class="stanza">
+        <!-- Stanza 3 -->
+        <section class="stanza" id="stanza-3">
+          <div class="stanza-number">III</div>
+          <div class="lines">
             <p class="line">Men themselves have wondered</p>
             <p class="line">What they see in me.</p>
             <p class="line">They try so much</p>
             <p class="line">But they can't touch</p>
             <p class="line">My inner mystery.</p>
-            <p class="line">When I try to show them</p>
+            <p class="line">When I try to show them,</p>
             <p class="line">They say they still can't see.</p>
             <p class="line">I say,</p>
             <p class="line">It's in the arch of my back,</p>
@@ -91,64 +117,46 @@
             <p class="line">Phenomenal woman,</p>
             <p class="line">That's me.</p>
           </div>
+        </section>
 
-          <!-- Stanza 4 - 16 lines -->
-          <div class="stanza">
+        <!-- Stanza 4 -->
+        <section class="stanza" id="stanza-4">
+          <div class="stanza-number">IV</div>
+          <div class="lines">
             <p class="line">Now you understand</p>
             <p class="line">Just why my head's not bowed.</p>
             <p class="line">I don't shout or jump about</p>
             <p class="line">Or have to talk real loud.</p>
-            <p class="line">When you see me passing</p>
+            <p class="line">When you see me passing,</p>
             <p class="line">It ought to make you proud.</p>
             <p class="line">I say,</p>
             <p class="line">It's in the click of my heels,</p>
             <p class="line">The bend of my hair,</p>
-            <p class="line">the palm of my hand,</p>
-            <p class="line">The need of my care,</p>
+            <p class="line">The palm of my hand,</p>
+            <p class="line">The need for my care.</p>
             <p class="line">'Cause I'm a woman</p>
             <p class="line">Phenomenally.</p>
             <p class="line">Phenomenal woman,</p>
             <p class="line">That's me.</p>
           </div>
-        </div>
+        </section>
       </article>
-
-      <section id="about" aria-labelledby="about-heading">
-        <h3 id="about-heading">About This Interpretation</h3>
-        <p>
-          This webpage presents <cite>Phenomenal Woman</cite> by
-          <cite>Dr. Maya Angelou</cite>
-          through modern web design principles, emphasizing accessibility and
-          responsive typography to enhance the reading experience.
-        </p>
-        <p>
-          The design choices reflect the poem's empowering and confident tone
-          through bold typography and elegant spacing that mirrors the strength
-          and grace described in the verses.
-        </p>
-      </section>
     </main>
 
     <footer>
-      <p>
-        <small>
-          Created by Olivia Denton for Web Development Course |
-          <time datetime="2025-09-27">September 2025</time>
-        </small>
-      </p>
-      <p>
-        <small>
-          <a
-            href="https://validator.w3.org/nu/?doc=https%3A%2F%2F.netlify.app%2F"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Validate HTML
-          </a>
-          |
-          <a href="#poem">Back to top</a>
-        </small>
-      </p>
+      <div class="footer-content">
+        <p class="student-info">
+          <strong>Student:</strong> Olivia D. | 
+          <strong>Course:</strong> Web Development 2 | 
+          <strong>Assignment:</strong> Poetry Interpretation with Images
+        </p>
+        <p class="poem-credit">
+          "Phenomenal Woman" by Maya Angelou © 1978. This interpretation is created for educational purposes.
+        </p>
+        <p class="image-credit">
+          Images: AI-generated custom artwork hosted on Cloudinary for optimal performance
+        </p>
+      </div>
     </footer>
   </body>
 </html>

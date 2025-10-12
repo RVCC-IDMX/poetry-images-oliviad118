@@ -279,23 +279,23 @@ Document your creative and technical choices:
 
 ### 🔤 Typography Choices
 
-- **Primary Font:** _[Add your chosen font and reasoning]_
-- **Why this font:** _[Explain how it complements your poem's mood/theme]_
+- **Primary Font:** Playfair Display', Georgia, serif for the heading and Source Sans Pro', 'Segoe UI, sans-serif for the body. I wanted to try a simple text that wasn't to overpowering to go with the poem.
+- **Why this font:**  The heading is bold just like the poem and I wanted it to stand out on it's own while the body is more soft, easy to read and flows well without being overwhelming.
 
 ### 🌈 Color Palette
 
-- **Primary Colors:** _[List your color scheme]_
-- **Inspiration:** _[What influenced these color choices?]_
+- **Primary Colors:** I went with more nutural tones like brown, gold, creams and similar variations of those colors.
+- **Inspiration:**  I wanted the colors to be grounded in how the poem feels.  
 
 ### 📱 Layout Approach
 
-- **Design Philosophy:** _[Mobile-first? Desktop-first? Why?]_
-- **Layout Strategy:** _[Flexbox? Grid? Combination? Why?]_
+- **Design Philosophy:** I did desktop first because that's how I was taught in Web Dev I and for me it's easier to have everything laid out because I always add more on the desktop side and fill in the blanks with Mobile responsiveness.
+- **Layout Strategy:** I used flexbox grid because I'm more comfortable with that format and it helps keep everything in alignment the way that I wanted.
 
 ### 🎭 Poem-Specific Decisions
 
-- **Visual Hierarchy:** _[How did you emphasize important elements?]_
-- **Responsive Strategy:** _[How does your design adapt to different screens?]_
+- **Visual Hierarchy:** I colored certain text to emphasize certain parts of the poem that stood out to me.
+- **Responsive Strategy:** It adapts very well on different screen sizes. It's smooth and flows.
 
 **Example entries:**
 
@@ -420,4 +420,4 @@ _(These will be available after completing Specification 1)_
 
 ---
 
-_📅 Last updated: [Add date when you complete the project]_
+_📅 Last updated: October 11, 2025 

@@ -1,0 +1,29 @@
+{
+  "name": "poetry-interpretation-oliviad118",
+  "version": "1.0.0",
+  "description": "A modern web development project that combines the beauty of poetry with professional coding practices",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,css,js,md}\"",
+    "check-format": "prettier --check \"**/*.{html,css,js,md}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVCC-IDMX/poetry-interpretation-oliviad118.git"
+  },
+  "keywords": ["poetry", "web-development", "html", "css", "responsive-design", "accessibility"],
+  "author": "oliviad118",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RVCC-IDMX/poetry-interpretation-oliviad118/issues"
+  },
+  "homepage": "https://github.com/RVCC-IDMX/poetry-interpretation-oliviad118#readme",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}

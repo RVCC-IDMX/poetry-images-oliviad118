@@ -1,0 +1,414 @@
+/* =====================================================
+   PHENOMENAL WOMAN - POETRY INTERPRETATION STYLES
+   A CSS design celebrating the empowerment and strength 
+   of Maya Angelou's iconic poem
+   ===================================================== */
+
+/* ================== CSS CUSTOM PROPERTIES ================== */
+:root {
+  /* Typography Scale */
+  --font-primary: "Playfair Display", Georgia, serif;
+  --font-secondary: "Source Sans Pro", -apple-system, sans-serif;
+  --font-accent: "Dancing Script", cursive, serif;
+
+  /* Font Sizes - Mobile First */
+  --text-xs: 0.875rem; /* 14px */
+  --text-sm: 1rem; /* 16px */
+  --text-base: 1.125rem; /* 18px */
+  --text-lg: 1.25rem; /* 20px */
+  --text-xl: 1.5rem; /* 24px */
+  --text-2xl: 2rem; /* 32px */
+  --text-3xl: 2.5rem; /* 40px */
+
+  /* Colors - Inspired by strength and elegance */
+  --color-primary: #8b4513; /* Rich brown - earthy strength */
+  --color-secondary: #d4af37; /* Golden - radiance and confidence */
+  --color-accent: #cd853f; /* Peru - warmth */
+  --color-text-dark: #2c1810; /* Deep brown */
+  --color-text-light: #5d4e37; /* Medium brown */
+  --color-background: #fff8f0; /* Warm white */
+  --color-paper: #fffef7; /* Cream paper */
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+
+  /* Layout */
+  --max-width: 800px;
+  --border-radius: 8px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ================== RESET & BASE STYLES ================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-text-dark);
+  background: linear-gradient(
+    135deg,
+    var(--color-background) 0%,
+    var(--color-paper) 100%
+  );
+  min-height: 100vh;
+}
+
+/* ================== TYPOGRAPHY ================== */
+h1,
+h2,
+h3 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+h2 {
+  font-size: var(--text-2xl);
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-size: var(--text-xl);
+  color: var(--color-secondary);
+}
+
+/* Beautiful link styles */
+a {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary);
+  text-decoration-thickness: 2px;
+}
+
+/* ================== LAYOUT ================== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--color-paper);
+  padding: var(--space-lg) var(--space-md);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+main {
+  flex: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+  width: 100%;
+}
+
+footer {
+  background: var(--color-primary);
+  color: var(--color-background);
+  text-align: center;
+  padding: var(--space-lg) var(--space-md);
+  margin-top: var(--space-2xl);
+}
+
+footer a {
+  color: var(--color-secondary);
+}
+
+footer a:hover {
+  color: var(--color-background);
+}
+
+/* ================== NAVIGATION ================== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+nav a {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: var(--text-sm);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--color-secondary);
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
+
+/* ================== POEM CONTENT ================== */
+#poem {
+  margin-bottom: var(--space-2xl);
+}
+
+#poem header {
+  background: none;
+  box-shadow: none;
+  text-align: center;
+  padding: 0 0 var(--space-xl) 0;
+  border-bottom: 3px solid var(--color-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.author {
+  font-family: var(--font-accent);
+  font-size: var(--text-lg);
+  color: var(--color-secondary);
+  font-style: italic;
+  margin-bottom: var(--space-sm);
+}
+
+.poem-info {
+  font-size: var(--text-xs);
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+/* Poetry Typography - The Heart of the Design */
+.poem-content {
+  background: var(--color-paper);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin: var(--space-xl) 0;
+}
+
+.stanza {
+  margin-bottom: var(--space-xl);
+  padding: var(--space-md) 0;
+  position: relative;
+}
+
+.stanza:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: var(--color-accent);
+  opacity: 0.5;
+}
+
+.line {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: 1.8;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-dark);
+  text-align: left;
+  padding-left: var(--space-md);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Subtle hover effect for lines */
+.line:hover {
+  color: var(--color-primary);
+  padding-left: var(--space-lg);
+}
+
+/* Special styling for emphasis lines */
+.line:nth-child(10), /* "I'm a woman" */
+.line:nth-child(11), /* "Phenomenally." */
+.line:nth-child(12), /* "Phenomenal woman," */
+.line:nth-child(13)  /* "That's me." */ {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: center;
+  padding-left: 0;
+  margin-top: var(--space-sm);
+}
+
+/* ================== ABOUT SECTION ================== */
+#about {
+  background: var(--color-paper);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--color-secondary);
+}
+
+#about p {
+  margin-bottom: var(--space-md);
+  text-align: justify;
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  :root {
+    --text-base: 1.25rem; /* 20px */
+    --text-lg: 1.375rem; /* 22px */
+    --text-xl: 1.625rem; /* 26px */
+    --text-2xl: 2.25rem; /* 36px */
+    --text-3xl: 3rem; /* 48px */
+  }
+
+  main {
+    padding: var(--space-2xl) var(--space-xl);
+  }
+
+  .poem-content {
+    padding: var(--space-2xl);
+  }
+
+  .line {
+    font-size: var(--text-lg);
+  }
+
+  nav ul {
+    gap: var(--space-xl);
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  :root {
+    --text-base: 1.375rem; /* 22px */
+    --text-lg: 1.5rem; /* 24px */
+    --text-xl: 1.75rem; /* 28px */
+    --text-2xl: 2.5rem; /* 40px */
+    --text-3xl: 3.5rem; /* 56px */
+  }
+
+  body {
+    background-attachment: fixed;
+  }
+
+  header {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .poem-content {
+    padding: var(--space-2xl) calc(var(--space-2xl) * 1.5);
+  }
+
+  /* Enhanced desktop interactions */
+  .stanza:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background: rgba(212, 175, 55, 0.05);
+    border-radius: var(--border-radius);
+    padding: var(--space-lg);
+    margin: var(--space-md) calc(-1 * var(--space-lg)) var(--space-xl);
+    transition: all 0.3s ease;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+  :root {
+    --max-width: 900px;
+  }
+
+  main {
+    padding: calc(var(--space-2xl) * 1.5) var(--space-xl);
+  }
+}
+
+/* ================== ACCESSIBILITY ENHANCEMENTS ================== */
+
+/* Focus styles for keyboard navigation */
+*:focus {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #000;
+    --color-secondary: #000;
+    --color-text-dark: #000;
+    --color-background: #fff;
+    --color-paper: #fff;
+  }
+}
+
+/* ================== PRINT STYLES ================== */
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  header,
+  footer,
+  nav {
+    display: none;
+  }
+
+  .poem-content,
+  #about {
+    box-shadow: none;
+    border: 1px solid black;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .stanza {
+    break-inside: avoid;
+  }
+}

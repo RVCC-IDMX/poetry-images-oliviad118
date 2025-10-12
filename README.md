@@ -2,7 +2,7 @@
 
 > A modern web development project that combines the beauty of poetry with professional coding pra### 🖼️ Live Demo
 
-> **🔗 Live Site:** [🚀 **DEPLOYED!** Visit: your-netlify-url.netlify.app](your-netlify-url-here)
+> **🔗 Live Site:** [🚀 **DEPLOYED!** Visit: your-netlify-url.netlify.app](https://maya-angelou-poetry-images-olviad118.netlify.app/)
 
 **"Phenomenal Woman" by Dr. Maya Angelou** - Experience this powerful poem through beautiful, responsive web design featuring:
 - ✨ **## 🎉 **Project Complete! 🌟**

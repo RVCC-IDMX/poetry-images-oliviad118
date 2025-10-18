@@ -1,31 +1,87 @@
-/* Enhanced CSS for Poetry with Images */
+/* Enhanced Typography for Maya Angelou's "Phenomenal Woman" */
 
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+/* Self-hosted Variable Fonts */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('../fonts/crimson-pro-normal-variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-/* CSS Custom Properties for consistent theming */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('../fonts/crimson-pro-italic-variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/inter-normal-variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/inter-italic-variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* CSS Custom Properties for Typography System */
 :root {
-  /* Enhanced color palette with image integration in mind */
+  /* Enhanced color palette with accessibility in mind */
   --primary-brown: #8B4513;
-  --warm-gold: #DAA520;
+  --warm-gold: #996F00;  /* Darker gold for better contrast (4.5:1 ratio) */
   --deep-chocolate: #3C2414;
   --cream: #F5F5DC;
   --soft-gold: #F4E4BC;
   --accent-burgundy: #800020;
-  --text-dark: #2C1810;
+  --text-dark: #1A1A1A;
   --background-light: #FEFAF5;
   
-  /* Typography */
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Source Sans Pro', 'Segoe UI', sans-serif;
+  /* Typography Variables */
+  --font-heading: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  --font-accent: 'Inter', 'Segoe UI', system-ui, sans-serif;
   
-  /* Spacing */
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
-  --space-xxl: 4rem;
+  /* Fluid Typography Scale using clamp() */
+  --text-xs: clamp(0.75rem, 0.5vw + 0.625rem, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.75vw + 0.75rem, 1rem);
+  --text-base: clamp(1rem, 1vw + 0.875rem, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.25vw + 1rem, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.5vw + 1.125rem, 1.5rem);
+  --text-2xl: clamp(1.5rem, 2vw + 1.25rem, 1.875rem);
+  --text-3xl: clamp(1.875rem, 2.5vw + 1.5rem, 2.25rem);
+  --text-4xl: clamp(2.25rem, 3vw + 1.875rem, 3rem);
+  --text-5xl: clamp(3rem, 4vw + 2.25rem, 4rem);
+  
+  /* Fluid Spacing using clamp() */
+  --space-xs: clamp(0.25rem, 0.5vw + 0.125rem, 0.5rem);
+  --space-sm: clamp(0.5rem, 1vw + 0.25rem, 1rem);
+  --space-md: clamp(1rem, 1.5vw + 0.75rem, 1.5rem);
+  --space-lg: clamp(1.5rem, 2vw + 1rem, 2rem);
+  --space-xl: clamp(2rem, 3vw + 1.5rem, 3rem);
+  --space-2xl: clamp(3rem, 4vw + 2rem, 4rem);
+  --space-3xl: clamp(4rem, 5vw + 3rem, 6rem);
+  
+  /* Variable Font Properties */
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-black: 900;
   
   /* Breakpoints */
   --mobile: 480px;
@@ -43,17 +99,31 @@
 
 body {
   font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-normal);
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--background-light);
-  font-size: 1.125rem;
   overflow-x: hidden;
+  font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Hero Section with Image */
+/* Enhance variable font properties for better readability */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-variation-settings: "wght" var(--weight-semibold);
+}
+
+/* Hero Section with Enhanced Typography */
 .hero-section {
   position: relative;
-  min-height: 70vh;
+  min-height: clamp(60vh, 10vw + 50vh, 80vh);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,41 +164,49 @@ body {
   color: white;
   background: rgba(0, 0, 0, 0.4);
   padding: var(--space-xl);
-  border-radius: 12px;
+  border-radius: clamp(8px, 1vw + 4px, 16px);
   backdrop-filter: blur(8px);
-  max-width: 600px;
+  max-width: clamp(300px, 80vw, 600px);
   margin: 0 var(--space-md);
 }
 
 .hero-content h1 {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-bold);
+  font-variation-settings: "wght" var(--weight-bold);
   margin-bottom: var(--space-sm);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
 .author {
-  font-family: var(--font-heading);
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
   font-style: italic;
+  font-weight: var(--weight-medium);
+  font-variation-settings: "wght" var(--weight-medium);
   margin-bottom: var(--space-md);
   color: var(--warm-gold);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.01em;
 }
 
 .hero-tagline {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-light);
+  font-variation-settings: "wght" var(--weight-light);
   line-height: 1.5;
   opacity: 0.95;
-  font-weight: 300;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.005em;
 }
 
-/* Main content container */
+/* Main content container with enhanced typography */
 main {
-  max-width: 800px;
+  max-width: clamp(320px, 90vw, 800px);
   margin: 0 auto;
   padding: var(--space-xl) var(--space-md);
 }
@@ -237,59 +315,65 @@ main {
     0 12px 32px rgba(218, 165, 32, 0.2);
 }
 
-/* Stanza styling */
+/* Enhanced Stanza styling with variable fonts */
 .stanza {
-  margin-bottom: var(--space-xxl);
+  margin-bottom: var(--space-2xl);
   padding: var(--space-xl);
   background: linear-gradient(135deg, 
     rgba(245, 245, 220, 0.6), 
     rgba(244, 228, 188, 0.4));
-  border-radius: 12px;
+  border-radius: clamp(8px, 1vw + 4px, 16px);
   box-shadow: 0 4px 20px rgba(139, 69, 19, 0.1);
-  border-left: 4px solid var(--warm-gold);
+  border-left: clamp(3px, 0.5vw + 2px, 6px) solid var(--warm-gold);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stanza:hover {
-  transform: translateY(-2px);
+  transform: translateY(clamp(-1px, -0.2vw, -3px));
   box-shadow: 0 8px 32px rgba(139, 69, 19, 0.15);
 }
 
 .stanza-number {
   position: absolute;
-  top: -10px;
+  top: clamp(-8px, -1vw, -12px);
   left: var(--space-md);
   background: var(--warm-gold);
   color: var(--deep-chocolate);
   font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 1.2rem;
-  width: 40px;
-  height: 40px;
+  font-weight: var(--weight-semibold);
+  font-variation-settings: "wght" var(--weight-semibold);
+  font-size: var(--text-lg);
+  width: clamp(32px, 5vw + 20px, 48px);
+  height: clamp(32px, 5vw + 20px, 48px);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(218, 165, 32, 0.3);
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
 }
 
 .lines {
   margin-left: var(--space-md);
 }
 
+/* Enhanced poetry line styling with variable font expressions */
 .line {
   margin-bottom: var(--space-sm);
-  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-normal);
+  font-variation-settings: "wght" var(--weight-normal);
   line-height: 1.7;
   color: var(--text-dark);
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
   padding-left: var(--space-sm);
 }
 
 .line:hover {
   color: var(--primary-brown);
+  font-variation-settings: "wght" var(--weight-medium);
 }
 
 .line::before {
@@ -298,8 +382,8 @@ main {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 3px;
-  height: 3px;
+  width: clamp(2px, 0.5vw + 1px, 4px);
+  height: clamp(2px, 0.5vw + 1px, 4px);
   background: var(--warm-gold);
   border-radius: 50%;
   opacity: 0;
@@ -310,26 +394,40 @@ main {
   opacity: 1;
 }
 
-/* Enhanced emphasis for key lines */
+/* Enhanced emphasis for key lines - "Phenomenal woman, That's me" */
 .line:nth-child(10),
 .line:nth-child(11),
 .line:nth-child(12),
 .line:nth-child(13) {
-  font-weight: 600;
+  font-weight: var(--weight-bold);
+  font-variation-settings: "wght" var(--weight-bold);
   color: var(--primary-brown);
   font-style: italic;
+  font-size: var(--text-xl);
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 2px rgba(139, 69, 19, 0.1);
 }
 
-/* Footer styling */
+/* Special styling for "I say," lines - building anticipation */
+.line:nth-child(5),
+.line:nth-child(8) {
+  font-weight: var(--weight-medium);
+  font-variation-settings: "wght" var(--weight-medium);
+  color: var(--accent-burgundy);
+  font-style: italic;
+  margin-bottom: var(--space-xs);
+}
+
+/* Enhanced Footer styling with variable fonts */
 footer {
   background: linear-gradient(135deg, var(--deep-chocolate), var(--primary-brown));
   color: var(--cream);
   padding: var(--space-xl) var(--space-md);
-  margin-top: var(--space-xxl);
+  margin-top: var(--space-2xl);
 }
 
 .footer-content {
-  max-width: 800px;
+  max-width: clamp(320px, 90vw, 800px);
   margin: 0 auto;
   text-align: center;
 }
@@ -337,28 +435,39 @@ footer {
 .footer-content p {
   margin-bottom: var(--space-md);
   line-height: 1.6;
+  font-size: var(--text-base);
 }
 
 .student-info {
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
+  font-variation-settings: "wght" var(--weight-semibold);
+  font-size: var(--text-lg);
   color: var(--warm-gold);
+  letter-spacing: 0.01em;
 }
 
 .poem-credit {
+  font-family: var(--font-body);
   font-style: italic;
+  font-weight: var(--weight-light);
+  font-variation-settings: "wght" var(--weight-light);
   opacity: 0.9;
+  font-size: var(--text-base);
 }
 
 .image-credit {
-  font-size: 0.9rem;
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-normal);
+  font-variation-settings: "wght" var(--weight-normal);
   opacity: 0.8;
 }
 
-/* Responsive Design */
+/* Enhanced Responsive Design with Fluid Typography */
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 60vh;
+    min-height: clamp(50vh, 8vw + 40vh, 70vh);
   }
   
   .hero-content {
@@ -382,6 +491,18 @@ footer {
   .image-break {
     margin: var(--space-xl) calc(-1 * var(--space-sm));
   }
+  
+  /* Adjust variable font settings for mobile */
+  .line {
+    font-variation-settings: "wght" 350;
+  }
+  
+  .line:nth-child(10),
+  .line:nth-child(11),
+  .line:nth-child(12),
+  .line:nth-child(13) {
+    font-variation-settings: "wght" var(--weight-bold);
+  }
 }
 
 @media (max-width: 480px) {
@@ -394,13 +515,16 @@ footer {
   }
   
   .stanza-number {
-    width: 35px;
-    height: 35px;
-    font-size: 1rem;
+    font-size: var(--text-base);
+  }
+  
+  /* Optimize typography for small screens */
+  .line {
+    font-variation-settings: "wght" 320;
   }
 }
 
-/* High-resolution display optimization */
+/* Enhanced accessibility and performance features */
 @media (min-resolution: 2dppx) {
   .hero-image,
   .section-image {
@@ -409,7 +533,7 @@ footer {
   }
 }
 
-/* Print styles */
+/* Enhanced print styles with typography considerations */
 @media print {
   .hero-image,
   .section-image {
@@ -421,21 +545,36 @@ footer {
     box-shadow: none;
     border: 1px solid var(--primary-brown);
   }
+  
+  /* Optimize typography for print */
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  .line {
+    font-size: 11pt;
+  }
+  
+  .hero-content h1 {
+    font-size: 24pt;
+  }
 }
 
-/* Focus styles for accessibility */
+/* Enhanced focus styles for accessibility */
 img:focus,
-.stanza:focus {
+.stanza:focus,
+.line:focus {
   outline: 3px solid var(--warm-gold);
   outline-offset: 2px;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling with variable font support */
 html {
   scroll-behavior: smooth;
 }
 
-/* Loading animations */
+/* Enhanced loading animations */
 .hero-image,
 .section-image {
   opacity: 0;
@@ -445,10 +584,50 @@ html {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(clamp(5px, 1vw + 2px, 15px));
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Variable font animation for emphasis */
+@keyframes emphasize {
+  0%, 100% {
+    font-variation-settings: "wght" var(--weight-normal);
+  }
+  50% {
+    font-variation-settings: "wght" var(--weight-bold);
+  }
+}
+
+/* Enhance key lines with subtle animation on load */
+.line:nth-child(10),
+.line:nth-child(11),
+.line:nth-child(12),
+.line:nth-child(13) {
+  animation: emphasize 3s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .hero-image,
+  .section-image,
+  .line:nth-child(10),
+  .line:nth-child(11),
+  .line:nth-child(12),
+  .line:nth-child(13) {
+    animation: none;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+  
+  .stanza:hover,
+  .image-break:hover {
+    transform: none;
   }
 }

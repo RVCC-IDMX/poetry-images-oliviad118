@@ -32,16 +32,18 @@
 
 ---
 
-*📅 Completed: September 27, 2025 | 🚀 Deployed: Live on Netlify*aphy** with Playfair Display and Source Sans Pro
+## ✨ Live Features
+
+- 🎭 **Typography** with Playfair Display and Source Sans Pro
 - 🎨 **Thematic Design** using rich browns and golds reflecting strength and radiance  
 - 📱 **Mobile-First Responsive** design that works perfectly on all devices
 - ♿ **Accessibility-First** with WCAG AA compliant colors and semantic structure
+- 🖼️ **Strategic Image Integration** with 5 curated images enhancing the poem's themes
 
-*🎭 The design choices reflect the poem's empowering message through sophisticated typography and visual hierarchy that guides readers through Maya Angelou's celebration of feminine strength and confidence.*s
+*🎭 The design choices reflect the poem's empowering message through sophisticated typography and visual hierarchy that guides readers through Maya Angelou's celebration of feminine strength and confidence.*
 
-[![GitHub repo size](https://img.shields.io/github/repo-size/RVCC-IDMX/poetry-interpretation-oliviad118?style=flat-square)](#)
-[![License](https://img.shields.io/github/license/RVCC-IDMX/poetry-interpretation-oliviad118?style=flat-square)](#)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](#)
+[![GitHub repo size](https://img.shields.io/github/repo-size/RVCC-IDMX/poetry-images-oliviad118?style=flat-square)](#)
+[![License](https://img.shields.io/github/license/RVCC-IDMX/poetry-images-oliviad118?style=flat-square)](#)
 
 ## 📚 Table of Contents
 
@@ -168,7 +170,7 @@ Your completed project will follow this professional structure:
 
 ### 🖼️ Live Demo
 
-> **🔗 Live Site:** [🌟 **LIVE NOW:** Maya Angelou Poetry Tribute](https://maya-angelou-poetry-tribute.netlify.app/)
+> **🔗 Live Site:** [🌟 **LIVE NOW:** Maya Angelou Poetry Images](https://maya-angelou-poetry-images-olviad118.netlify.app/)
 
 *Experience Maya Angelou's "Phenomenal Woman" in an elegantly designed, responsive webpage that celebrates the poem's themes of strength and empowerment.*
 
@@ -234,7 +236,7 @@ Follow these steps for seamless deployment:
 
 ### 🔗 Your Live Site
 
-**Netlify URL:** [🌟 **LIVE NOW:** maya-angelou-poetry-tribute.netlify.app](https://maya-angelou-poetry-tribute.netlify.app/)
+**Netlify URL:** [🌟 **LIVE NOW:** Maya Angelou Poetry Images](https://maya-angelou-poetry-images-olviad118.netlify.app/)
 
 ### 🛠️ Troubleshooting
 
@@ -273,34 +275,32 @@ Follow these steps for seamless deployment:
 
 ## 🎨 Design Decisions
 
-> **Update this section as you develop your project**
-
-Document your creative and technical choices:
-
 ### 🔤 Typography Choices
 
-- **Primary Font:** _[Add your chosen font and reasoning]_
-- **Why this font:** _[Explain how it complements your poem's mood/theme]_
+- **Primary Font:** *Playfair Display (headings) and Source Sans Pro (body)*
+- **Why this font:** *Playfair Display adds elegant sophistication that matches Maya Angelou's powerful, dignified voice, while Source Sans Pro ensures excellent readability for the poem's content*
 
 ### 🌈 Color Palette
 
-- **Primary Colors:** _[List your color scheme]_
-- **Inspiration:** _[What influenced these color choices?]_
+- **Primary Colors:** *Rich browns (#8B4513), warm gold (#DAA520), cream (#F5F5DC), and deep chocolate (#3C2414)*
+- **Inspiration:** *The warm earth tones reflect themes of strength, natural beauty, and radiance that embody the "phenomenal woman" - colors that suggest both grounding and luminous confidence*
 
 ### 📱 Layout Approach
 
-- **Design Philosophy:** _[Mobile-first? Desktop-first? Why?]_
-- **Layout Strategy:** _[Flexbox? Grid? Combination? Why?]_
+- **Design Philosophy:** *Mobile-first responsive design to ensure accessibility across all devices*
+- **Layout Strategy:** *Flexbox for precise alignment and centering, particularly effective for the hero section and stanza numbering badges*
+
+### 🖼️ Image Integration Strategy
+
+- **Visual Storytelling:** *5 strategically placed Cloudinary images that enhance specific poem themes without disrupting reading flow*
+- **Performance Optimization:** *Responsive srcset attributes with lazy loading and automatic format/quality optimization*
+- **Enhancement Effects:** *Subtle hover animations, layered shadows, and filter effects that make images feel premium and gallery-quality*
 
 ### 🎭 Poem-Specific Decisions
 
-- **Visual Hierarchy:** _[How did you emphasize important elements?]_
-- **Responsive Strategy:** _[How does your design adapt to different screens?]_
-
-**Example entries:**
-
-> - _"I chose Georgia font because its serif style adds elegance that matches my poem's formal tone"_
-> - _"My dark blue and gold color scheme reflects the nighttime setting of my chosen poem"_
+- **Visual Hierarchy:** *Large, centered hero section with overlaid title, followed by numbered stanzas with elegant Roman numerals and strategic image breaks*
+- **Responsive Strategy:** *Images scale gracefully, typography adjusts fluidly, and spacing maintains optimal reading experience from mobile to desktop*
+- **Accessibility First:** *High contrast ratios, semantic HTML structure, descriptive alt text, and keyboard navigation support*
 
 ---
 

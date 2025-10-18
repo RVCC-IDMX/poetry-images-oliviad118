@@ -277,6 +277,7 @@ Follow these steps for seamless deployment:
 
 ### 🔤 Typography Choices
 
+<<<<<<< HEAD
 - **Primary Font:** *Playfair Display (headings) and Source Sans Pro (body)*
 - **Why this font:** *Playfair Display adds elegant sophistication that matches Maya Angelou's powerful, dignified voice, while Source Sans Pro ensures excellent readability for the poem's content*
 
@@ -301,6 +302,30 @@ Follow these steps for seamless deployment:
 - **Visual Hierarchy:** *Large, centered hero section with overlaid title, followed by numbered stanzas with elegant Roman numerals and strategic image breaks*
 - **Responsive Strategy:** *Images scale gracefully, typography adjusts fluidly, and spacing maintains optimal reading experience from mobile to desktop*
 - **Accessibility First:** *High contrast ratios, semantic HTML structure, descriptive alt text, and keyboard navigation support*
+=======
+- **Primary Font:** Playfair Display', Georgia, serif for the heading and Source Sans Pro', 'Segoe UI, sans-serif for the body. I wanted to try a simple text that wasn't to overpowering to go with the poem.
+- **Why this font:**  The heading is bold just like the poem and I wanted it to stand out on it's own while the body is more soft, easy to read and flows well without being overwhelming.
+
+### 🌈 Color Palette
+
+- **Primary Colors:** I went with more nutural tones like brown, gold, creams and similar variations of those colors.
+- **Inspiration:**  I wanted the colors to be grounded in how the poem feels.  
+
+### 📱 Layout Approach
+
+- **Design Philosophy:** I did desktop first because that's how I was taught in Web Dev I and for me it's easier to have everything laid out because I always add more on the desktop side and fill in the blanks with Mobile responsiveness.
+- **Layout Strategy:** I used flexbox grid because I'm more comfortable with that format and it helps keep everything in alignment the way that I wanted.
+
+### 🎭 Poem-Specific Decisions
+
+- **Visual Hierarchy:** I colored certain text to emphasize certain parts of the poem that stood out to me.
+- **Responsive Strategy:** It adapts very well on different screen sizes. It's smooth and flows.
+
+**Example entries:**
+
+> - _"I chose Georgia font because its serif style adds elegance that matches my poem's formal tone"_
+> - _"My dark blue and gold color scheme reflects the nighttime setting of my chosen poem"_
+>>>>>>> 628cc36f2ec1980ed2230266b33078c3a0d599cb
 
 ---
 
@@ -420,4 +445,8 @@ _(These will be available after completing Specification 1)_
 
 ---
 
+<<<<<<< HEAD
 _📅 Last updated: October 12, 2025 - Project Complete! 🎉_
+=======
+_📅 Last updated: October 11, 2025 
+>>>>>>> 628cc36f2ec1980ed2230266b33078c3a0d599cb
